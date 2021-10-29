@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: staging-of-techtrends
+spec:
+  destination:
+    name: ''
+    namespace: ''
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: helm
+    repoURL: 'https://github.com/cloud-sec-cyber/techtrends-cloud-native-architecture.git'
+    targetRevision: HEAD
+    helm:
+      valueFiles:
+        - values-staging.yaml
+  project: default
