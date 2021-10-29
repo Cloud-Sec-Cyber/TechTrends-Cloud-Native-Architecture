@@ -1,0 +1,67 @@
+
+docker build -t nashblade/techtrends .
+
+docker run -d -p 7111:3111 nashblade/techtrends
+
+docker logs e709
+
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+
+ * Debug mode: off
+2021-10-29 23:04:05,795 -- _log --  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-10-29 23:04:05,795 -- _log --  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-10-29 14:09:09,658 -- _log --  * Running on http://127.0.0.1:5939/ (Press CTRL+C to quit)
+2021-10-29 14:09:09,890 -- _log --  * Running on http://127.0.0.1:5939/ (Press CTRL+C to quit)
+2021-10-29 14:10:24,700 -- get_db_connection -- Connecting to database file ./database.db
+2021-10-29 14:10:24,700 -- get_db_connection -- Connecting to database file ./database.db
+2021-10-29 14:10:24,705 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:10:24] "GET / HTTP/1.1" 200 -
+2021-10-29 14:10:24,705 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:10:24] "GET / HTTP/1.1" 200 -
+2021-10-29 14:10:24,710 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:10:24] "GET /static/css/main.css HTTP/1.1" 200 -
+2021-10-29 14:10:24,710 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:10:24] "GET /static/css/main.css HTTP/1.1" 200 -
+2021-10-29 14:13:18,323 -- get_db_connection -- Connecting to database file ./database.db
+2021-10-29 14:13:18,323 -- get_db_connection -- Connecting to database file ./database.db
+2021-10-29 14:13:18,323 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:13:18] "GET / HTTP/1.1" 200 -
+2021-10-29 14:13:18,323 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:13:18] "GET / HTTP/1.1" 200 -
+2021-10-29 14:13:18,419 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:13:18] "GET /static/css/main.css HTTP/1.1" 200 -
+2021-10-29 14:13:18,420 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:13:18] "GET /static/css/main.css HTTP/1.1" 200 -
+2021-10-29 14:13:18,420 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:13:18] "GET /favicon.ico HTTP/1.1" 404 -
+2021-10-29 14:13:18,420 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:13:18] "GET /favicon.ico HTTP/1.1" 404 -
+2021-10-29 14:32:24,702 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:32:24] "GET /create HTTP/1.1" 200 -
+2021-10-29 14:32:24,702 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:32:24] "GET /create HTTP/1.1" 200 -
+2021-10-29 14:32:24,702 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:32:24] "GET /static/css/main.css HTTP/1.1" 304 -
+2021-10-29 14:32:24,702 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:32:24] "GET /static/css/main.css HTTP/1.1" 304 -
+2021-10-29 14:38:38,559 -- get_db_connection -- Connecting to database file ./database.db
+2021-10-29 14:38:38,512 -- get_db_connection -- Connecting to database file ./database.db
+2021-10-29 14:38:38,513 -- create -- New page created, with Title "Kubernetes 1.21 Released"
+2021-10-29 14:38:38,513 -- create -- New page created, with Title "Kubernetes 1.21 Released"
+2021-10-29 14:38:38,514 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:38:38] "POST /create HTTP/1.1" 302 -
+2021-10-29 14:38:38,514 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:38:38] "POST /create HTTP/1.1" 302 -
+2021-10-29 14:38:38,518 -- get_db_connection -- Connecting to database file ./database.db
+2021-10-29 14:38:38,518 -- get_db_connection -- Connecting to database file ./database.db
+2021-10-29 14:38:38,521 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:38:38] "GET / HTTP/1.1" 200 -
+2021-10-29 14:38:38,521 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:38:38] "GET / HTTP/1.1" 200 -
+2021-10-29 14:38:38,635 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:38:38] "GET /static/css/main.css HTTP/1.1" 304 -
+2021-10-29 14:38:38,635 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:38:38] "GET /static/css/main.css HTTP/1.1" 304 -
+2021-10-29 14:41:06,209 -- get_db_connection -- Connecting to database file ./database.db
+2021-10-29 14:41:06,209 -- get_db_connection -- Connecting to database file ./database.db
+2021-10-29 14:41:06,211 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:41:06] "GET /metrics HTTP/1.1" 200 -
+2021-10-29 14:41:06,211 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:41:06] "GET /metrics HTTP/1.1" 200 -
+2021-10-29 14:41:41,508 -- get_db_connection -- Connecting to database file ./database.db
+2021-10-29 14:41:41,508 -- get_db_connection -- Connecting to database file ./database.db
+2021-10-29 14:41:41,512 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:41:41] "GET /healthz HTTP/1.1" 200 -
+2021-10-29 14:41:41,512 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:41:41] "GET /healthz HTTP/1.1" 200 -
+2021-10-29 14:41:48,300 -- get_db_connection -- Connecting to database file ./database.db
+2021-10-29 14:41:48,300 -- get_db_connection -- Connecting to database file ./database.db
+2021-10-29 14:41:48,310 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:41:48] "GET / HTTP/1.1" 200 -
+2021-10-29 14:41:48,310 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:41:48] "GET / HTTP/1.1" 200 -
+2021-10-29 14:41:54,194 -- get_db_connection -- Connecting to database file ./database.db
+2021-10-29 14:41:54,198 -- get_db_connection -- Connecting to database file ./database.db
+2021-10-29 14:41:54,326 -- post -- Article "Kubernetes 1.21 Released" page retrieved.
+2021-10-29 14:41:54,326 -- post -- Article "Kubernetes 1.21 Released" page retrieved.
+2021-10-29 14:41:54,333 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:41:54] "GET /7 HTTP/1.1" 200 -
+2021-10-29 14:41:54,333 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:41:54] "GET /7 HTTP/1.1" 200 -
+2021-10-29 14:41:54,338 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:41:54] "GET /static/css/main.css HTTP/1.1" 304 -
+2021-10-29 14:41:54,338 -- _log -- 127.0.0.1 - - [29/Oct/2021 14:41:54] "GET /static/css/main.css HTTP/1.1" 304 -
