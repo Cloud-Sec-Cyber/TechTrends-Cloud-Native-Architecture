@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: techtrends
+  name: techtrends
+  namespace: sandbox
+spec:
+  ports:
+  - name: 3336-5939
+    port: 5939
+    protocol: TCP
+    targetPort: 5939
+  selector:
+    app: techtrends
+  type: ClusterIP
+status:
+  loadBalancer: {}
