@@ -1,12 +1,10 @@
-{% extends 'base.html' %}
 
-{% block content %}
-    <h1>{% block title %} Introducing You To TechTrends!{% endblock %}</h1>
-    {% for post in posts %}
+    <h1> Introducing You To TechTrends!</h1>
+   
         <a class="post" href="{{ url_for('post', post_id=post['id']) }}">
-            <h2>{{ post['title'] }}</h2>
+            <h2> The Latest News Within The Cloud-Native Ecosystem </h2>
         </a>
-        <span class="timestamp">{{ post['created'] }}</span>
+        <span class="timestamp">29 October 2021</span>
         <hr>
-    {% endfor %}
-{% endblock %}
+   
+
