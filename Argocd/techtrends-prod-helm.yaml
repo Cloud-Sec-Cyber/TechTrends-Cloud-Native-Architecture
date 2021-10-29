@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: trends-prod
+spec:
+  destination:
+    name: ''
+    namespace: ''
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: helm
+    repoURL: 'https://github.com/cloud-sec-cyber/techtrends-cloud-native-architecture'
+    targetRevision: HEAD
+    helm:
+      valueFiles:
+        - values-prod.yaml
+  project: default
